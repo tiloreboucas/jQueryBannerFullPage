@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.bannerfullpage.js"></script>
+</head>
+<body>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var banner =   '<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000 codebase="http://download.macromedia.com/pub/shockwave/cabs/ flash/swflash.cab#version=5,0,0,0" ID=banner_id WIDTH=900 HEIGHT=500>' +
+		       '<PARAM  NAME=movie VALUE="http://www.areah.com.br/images/banners/ARQUIVOFLASH.swf?oas=http://de.realmediadigital.com/RealMedia/ads/click_lx.ads/%%PAGE%%/%%RAND%%/%%POS%%/%%CAMP%%/%%IMAGE%%/%%USER%%">' +
+		       '<PARAM NAME=loop VALUE=true>' +
+		       '<PARAM NAME=menu VALUE=false>' +
+		       '<PARAM NAME=quality VALUE=high>' +
+		       '<PARAM NAME=wmode VALUE=transparent>' +
+		       '<EMBED src="http://www.areah.com.br/images/banners/ARQUIVOFLASH.swf?oas=http://de.realmediadigital.com/RealMedia/ads/click_lx.ads/%%PAGE%%/%%RAND%%/%%POS%%/%%CAMP%%/%%IMAGE%%/%%USER%%" menu=false quality=high bgcolor=#FFFFFF swLiveConnect=FALSE WIDTH=900 HEIGHT=500 TYPE="application/x-shockwave-flash" wmode="transparent">' +
+		       '</OBJECT>';
+
+		       var bg_url = "http://www.areah.com.br/images/banners/ARQUIVOBACKGROUND.jpg";
+
+		       $('body').overlay({
+		           'content': banner,
+		           'bg_url': bg_url
+		       });	
+		});
+	</script>
+</body>
+</html>

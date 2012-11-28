@@ -67,6 +67,7 @@
                     'cursor': 'pointer',
                     'border': '0px',
                     'top': '-26px',
+                    'left': '354px',
                     'background': 'transparent url(http://www.areah.com.br/images/bt_entrar_PL.gif) no-repeat center center'
                 });
 

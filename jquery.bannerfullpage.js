@@ -17,8 +17,8 @@
             'container': null,
             'mask': null,
             'opacity': '1',
-            'width': '900',
-            'height': '500',
+            'width': 900,
+            'height': 500,
             'content': null,
             'bg_url': 'none',
             'bg_color': '#000',
@@ -109,8 +109,8 @@
                 });
 
                 $($this.attr.container).css({
-                    'width': $this.attr.width,
-                    'height': $this.attr.height,
+                    'width': $this.attr.width + 'px',
+                    'height': $this.attr.height + 'px',
                     'background': '#fff',
                     'z-index': '10001',
                     'position': 'fixed',

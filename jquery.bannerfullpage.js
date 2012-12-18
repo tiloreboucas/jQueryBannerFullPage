@@ -38,6 +38,22 @@
                 methods.build.call($this);
             },
 
+            HideAsideVideo: function(){
+                $("#Coluna_Direita center").css({ 
+                    width: "300px", 
+                    height: "250px", 
+                    display: "block",
+                    "background-color": "#000"
+                });
+
+                $("#Coluna_Direita center iframe").hide();
+            },
+
+            ShowAsideVideo: function(){
+                $("#Coluna_Direita center").removeAtrr("style");
+                $("#Coluna_Direita center iframe").show();
+            },
+
             build: function () {
                 var $this = this;
 
@@ -72,7 +88,8 @@
                 });
 
                 $($this.attr.button).click(function () {
-                    methods.remove.call($this);         
+                    methods.remove.call($this);   
+                    methods.ShowAsideVideo.call($call);      
                 });
 
                 $($this.attr.mask).css({
@@ -86,6 +103,7 @@
 
                 methods.stylize.call($this);
                 methods.reposition.call($this);
+                methods.HideAsideVideo.call($this);
 
                 $($this.attr.container).append($this.attr.content);
             },

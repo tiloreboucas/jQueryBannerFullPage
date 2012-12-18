@@ -39,6 +39,8 @@
             },
 
             HideAsideVideo: function(){
+                var $this = this;
+
                 $("#Coluna_Direita center").css({ 
                     width: "300px", 
                     height: "250px", 
@@ -50,6 +52,8 @@
             },
 
             ShowAsideVideo: function(){
+                var $this = this;
+                
                 $("#Coluna_Direita center").removeAtrr("style");
                 $("#Coluna_Direita center iframe").show();
             },
@@ -89,7 +93,7 @@
 
                 $($this.attr.button).click(function () {
                     methods.remove.call($this);   
-                    methods.ShowAsideVideo.call($call);      
+                    methods.ShowAsideVideo.call($this);      
                 });
 
                 $($this.attr.mask).css({

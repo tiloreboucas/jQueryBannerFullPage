@@ -41,21 +41,25 @@
             HideAsideVideo: function(){
                 var $this = this;
 
-                $("#Coluna_Direita center").css({ 
-                    width: "300px", 
-                    height: "250px", 
-                    display: "block",
-                    "background-color": "#000"
-                });
+                //$("#Coluna_Direita center").css({
+                //    width: "300px", 
+                //    height: "250px", 
+                //    display: "block",
+                //    "background-color": "#000"
+                //});
 
-                $("#Coluna_Direita center iframe").hide();
+                //$("#Coluna_Direita center iframe").hide();
+                console.log("HideAsideVideo");
+                $("#Coluna_Direita center").hide();
             },
 
             ShowAsideVideo: function(){
                 var $this = this;
-                
-                $("#Coluna_Direita center").removeAtrr("style");
-                $("#Coluna_Direita center iframe").show();
+
+                //$("#Coluna_Direita center").removeAtrr("style");
+                //$("#Coluna_Direita center iframe").show();
+                console.log("ShowAsideVideo");
+                $("#Coluna_Direita center").show();
             },
 
             build: function () {
